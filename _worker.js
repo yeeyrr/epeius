@@ -1,6 +1,8 @@
+// 功能：创建trojan订阅链接，自定义优选域名
+// 使用：自定义域名/“password=”(默认为atuo，本项目密码在cf变量里面部署，其他内容例如反代地址看主页说明后在cf变量部署)
 // _worker.js
 import { connect } from "cloudflare:sockets";
-let password = 'auto';
+let password = 'atuo';
 let proxyIP = '';
 // The user name and password do not contain special characters
 // Setting the address will ignore proxyIP
